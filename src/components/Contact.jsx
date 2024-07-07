@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Contact = () => {
   return (
@@ -85,7 +85,7 @@ const Contact = () => {
             </ul>
           </div>
 
-          <div className="w-[50%] h-[100%] ">
+          <div className="w-[50%] h-[100%]">
             <div>
               <input
                 type="text"
@@ -94,19 +94,20 @@ const Contact = () => {
               />
               <textarea
                 placeholder="Message"
-                class="w-full text-[18px] h-[155px] mt-[32px] pl-4 pt-[10px] border-none outline-none bg-[rgba(31,41,55,1)] placeholder-opacity-50 text-[rgba(243,244,246,1)] resize-none"
+                className="w-full text-[18px] h-[155px] mt-[32px] pl-4 pt-[10px] border-none outline-none bg-[rgba(31,41,55,1)] placeholder-opacity-50 text-[rgba(243,244,246,1)] resize-none"
               ></textarea>
-              <input
-                type="button"
-                value="Contact us"
+              <button
+                type="submit"
                 className="cursor-pointer text-black mt-[32px] w-[123px] h-[59px] bg-yellow-500 text-[16px] rounded-[4px] placeholder-black placeholder-opacity-100"
-              />
+              >
+                Contact us
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Contact
+export default Contact;
